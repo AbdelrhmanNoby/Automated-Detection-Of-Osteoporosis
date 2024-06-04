@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+*
+*::before,
+*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.us{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.us2 li {
+    list-style: none;
+}
+
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #262626;
+    /* --accent-bg: #ffffff; */
+
+    --primary-color: #111;
+    --secondary-color: rgba(0, 0, 0, 0.7);
+    --accent-color: #818cf8;
+
+    --border-color: rgba(255,255,255, 30%);
+    
+    --username-size: 32px;
+    --title-size: 28px;
+    --subtitle: 24px;
+}
+
+body {
+    /* background-image: url(/images/banner.jpg);
+    background-size: cover; */
+   
+}
+
+
+.wrapper {
+    height:100vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-bg);
+    border-radius: 40px;
+    border: 2px solid var(--accent-bg);
+    /* display: grid;
+    grid-template-rows: 220px auto;
+    overflow: auto; */
+    overflow: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.card-header {
+    background-color: #0A5B7F;
+    background-size: cover;
+   
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    padding: 6rem;
+   
+}
+    .badge {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        inset: calc(100% - 75px) auto auto 70px;
+    }
+        .custom-range {
+            width: 150px;
+            height: 150px;
+            background: url(../../im/photo_2024-04-03_12-09-13.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 10px solid var(--primary-bg);
+        }
+        .custom-select {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--primary-color);
+            background-color: var(--primary-bg);
+            padding: 10px 30px;
+            border-radius: 0 50px 50px 0;
+            transform: translateX(-10px);
+        }
+
+       
+
+
+        .form-control {
+            border: 1px solid #ffffff;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            display: block;
+            width: 100%;
+            height: 30px;
+            padding: 0;
+            margin-bottom: 25px; 
+          }
+            .form-control::-webkit-input-placeholder {
+              font-size: 14px;
+              color: gray;
+              font-family: arial; }
+
+
+
+            .modal-title {
+                color: var(--secondary-color);
+            }
+
+          
+            .text-center{
+                background-color:#ddd;
+                color: #666666;
+                padding: 1em;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                outline: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.4;
+                /* width: 300px; */
+                height: 80px;
+                transition: all 0.2s;
+                display: flex;
+                /* margin-left: 12cm; */
+                margin-top: 1cm;
+            }
+
+
+        
+            .inner{
+                /* margin-left: 12cm; */
+                margin-top: 1cm;
+            }
+
+              
+            .textarea{
+                background-color:#ddd;
+                color: #666666;
+                padding: 1em;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                outline: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.4;
+                transition: all 0.2s;
+                display: flex;
+                width:100%;
+                height: 100px;
+            }
+            
+            .textarea:hover {
+                cursor: pointer;
+                background-color: #eee;
+            }
+
+            .textarea:focus{
+                cursor: text;
+                color: #333;
+                background-color:white;
+                border-color: #333;
+            }
+            
+            
+            
+
+
+
+
+/* @media screen and (max-width: 768px) {
+    .card {
+        height: 100%;
+        border-radius: 0;
+    }
+        .card-header {
+            border-radius: 0;
+        }
+            .badge {
+                inset: calc(100% - 75px) auto auto 50%;
+                transform: translateX(-50%);
+
+                flex-direction: column;
+                text-align: center;
+            }
+                .custom-select {transform: translateX(0)}
+        
+                
+} */

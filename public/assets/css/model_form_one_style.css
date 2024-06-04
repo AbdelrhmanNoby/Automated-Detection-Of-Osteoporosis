@@ -1,0 +1,355 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+.us{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #262626;
+    /* --accent-bg: #4f46e5; */
+
+    --primary-color: #111;
+    --secondary-color: rgba(0, 0, 0, 0.7);
+    --accent-color: #818cf8;
+
+    --border-color: rgba(255,255,255, 30%);
+    
+    --username-size: 32px;
+    --title-size: 28px;
+    --subtitle: 24px;
+}
+
+
+
+
+.body {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        
+       
+      }
+     
+}
+
+
+.wrapper {
+    height:100vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    /* height: 100%; */
+    background-color: var(--primary-bg);
+    border-radius: 40px;
+    border: 2px solid var(--accent-bg);
+    display: grid;
+    /* margin-top: 50px; */
+    grid-template-rows: 220px auto;
+    
+}
+.card-header {
+    background-color: #0A5B7F;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+    .badge {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        inset: calc(100% - 75px) auto auto 70px;
+    }
+        .custom-range {
+            width: 150px;
+            height: 150px;
+            background: url(../../im/photo_2024-04-03_12-09-13.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 10px solid var(--primary-bg);
+        }
+        .custom-select {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--primary-color);
+            background-color: var(--primary-bg);
+            padding: 10px 30px;
+            border-radius: 0 50px 50px 0;
+            transform: translateX(-10px);
+        }
+
+
+
+
+        .form-control {
+          border: 1px solid #ffffff;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          display: block;
+          width: 100%;
+          height: 30px;
+          padding: 0;
+          margin-bottom: 25px; 
+        }
+          .form-control::-webkit-input-placeholder {
+            font-size: 14px;
+            color: gray;
+            font-family: arial; }
+
+            .modal-title {
+                color: var(--secondary-color);
+            }
+
+           /* ................................... */
+
+           /* a:focus {
+            outline: none !important;
+          } */
+
+          ul, li {
+            margin: 0px;
+            list-style-type: none;
+          }
+                
+          button {
+            outline: none !important;
+            border: none;
+            background: transparent;
+          }
+          
+          button:hover {
+            cursor: pointer;
+          }
+          
+          iframe {
+            border: none !important;
+          }
+          
+          .limiter {
+            width: 100%;
+            margin: 0 auto;
+            
+            
+          }
+          
+          .container-login100 {
+            width: 100%;  
+            height: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #5744c0;
+            background: -webkit-linear-gradient(-135deg, #043e57, #4158d0);
+            background: -o-linear-gradient(-135deg, #043e57, #4158d0);
+            background: -moz-linear-gradient(-135deg, #043e57, #4158d0);
+            background: linear-gradient(-135deg, #043e57, #B1B1B2);
+            
+          }
+          
+          .wrap-login100 {
+            width: 860px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 177px 130px 33px 95px;
+          }
+          
+          
+          .login100-pic {
+            width: 316px;
+            
+            
+          }
+          
+          .login100-pic img {
+            max-width: 70%;
+            
+          }
+          
+          
+          
+          .login100-form {
+            width: 290px;
+           
+          }
+          
+          .login100-form-title { 
+            font-size: 24px;
+            color: #333;
+            line-height: 1.2;
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding-bottom: 54px;
+            font-weight: 500;
+          }
+          
+      
+          .wrap-input100 {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            margin-bottom: 10px;
+          }
+          
+          .input100 { 
+            font-size: 15px;
+            line-height: 1.5;
+            display: block;
+            width: 100%;
+            background: #e6e6e6;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0 30px 0 68px;
+          }
+          
+
+          @-webkit-keyframes anim-shadow {
+            to {
+              box-shadow: 0px 0px 70px 25px;
+              opacity: 0;
+            }
+          }
+          
+          @keyframes anim-shadow {
+            to {
+              box-shadow: 0px 0px 70px 25px;
+              opacity: 0;
+            }
+          }
+          
+    
+          .container-login100-form-btn {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+          }
+          
+          .login100-form-btn { 
+            font-size: 15px;
+            line-height: 1.5;
+            color: #fff;
+            text-transform: uppercase;
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            background: #0A5B7F;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25px;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+          }
+          
+          .login100-form-btn:hover {
+            background: #043e57;
+          }
+/* ........................................ */
+/* @media screen and (max-width: 768px) {
+    .card {
+        height: 100%;
+        border-radius: 0;
+    }
+        .card-header {
+            border-radius: 0;
+        }
+            .badge {
+                inset: calc(100% - 75px) auto auto 50%;
+                transform: translateX(-50%);
+
+                flex-direction: column;
+                text-align: center;
+            }
+                .custom-select {transform: translateX(0)}
+
+          }
+               
+@media (max-width: 992px) {
+  .wrap-login100 {
+    padding: 177px 90px 33px 85px;
+  }
+
+  .login100-pic {
+    width: 35%;
+  }
+
+  .login100-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-login100 {
+    padding: 100px 80px 33px 80px;
+  }
+
+  .login100-pic {
+    display: none;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 100px 15px 33px 15px;
+  }
+} */
+
+
